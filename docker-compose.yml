@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  vireo:
+    image: 'pulibrary/vireo4'
+    environment:
+      - TOMCAT_PASSWORD=secret
+      - TOMCAT_ALLOW_REMOTE_MANAGEMENT=yes
+    ports:
+      - '8888:8080'
